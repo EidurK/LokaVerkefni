@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/DropDown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/MainStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml" afterDir="false" />
+    <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="Bjó til verkefni">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/CheckboxingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/CheckboxingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/DropDown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/DropDown.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +59,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681148414306</updated>
-      <workItem from="1681148415408" duration="3547000" />
+      <workItem from="1681148415408" duration="3943000" />
+      <workItem from="1681152372311" duration="4588000" />
     </task>
     <servers />
   </component>
