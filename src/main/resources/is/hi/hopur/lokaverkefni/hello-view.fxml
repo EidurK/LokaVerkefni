@@ -3,9 +3,31 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="460.0" styleClass="AnchorPane" stylesheets="@Style/MainStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#8a9635" height="480.0" stroke="BLACK" strokeType="INSIDE" styleClass="BG" width="460.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-   </children>
+<AnchorPane
+  maxHeight="-Infinity"
+  maxWidth="-Infinity"
+  minHeight="-Infinity"
+  minWidth="-Infinity"
+  prefHeight="480.0"
+  prefWidth="460.0"
+  styleClass="AnchorPane"
+  stylesheets="@Style/MainStyle.css"
+  xmlns="http://javafx.com/javafx/17.0.2-ea"
+  xmlns:fx="http://javafx.com/fxml/1">
+<children>
+  <Rectangle
+    arcHeight="30.0"
+    arcWidth="30.0"
+    fill="#8a9635"
+    height="480.0"
+    stroke="BLACK"
+    strokeType="INSIDE"
+    styleClass="BG"
+    width="460.0"
+    AnchorPane.bottomAnchor="0.0"
+    AnchorPane.leftAnchor="0.0"
+    AnchorPane.rightAnchor="0.0"
+    AnchorPane.topAnchor="0.0"
+    />
+</children>
 </AnchorPane>

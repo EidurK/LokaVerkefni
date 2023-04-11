@@ -1,0 +1,19 @@
+<?xml version="1.0" ecoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<fx:root
+  type="javafx.scene.layout.AnchorPane"
+  fx:id="fxTaskPane"
+  prefHeight="30"
+  prefWidth="30">
+<children>
+  <CheckBox>
+
+  </CheckBox>
+
+
+
+</children>
+</fx:root>
+

@@ -2,5 +2,13 @@
 
 <?import javafx.scene.control.*?>
 
-
-<ComboBox prefHeight="29.0" prefWidth="449.0" styleClass="combo-box" stylesheets="@Style/DropDown.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" />
+<fx:root
+  type="javafx.scene.control.ComboBox"
+  fx:id="fxComboBox"
+  prefHeight="29.0"
+  prefWidth="449.0"
+  styleClass="combo-box"
+  stylesheets="@Style/DropDown.css"
+  xmlns="http://javafx.com/javafx/17.0.2-ea"
+  xmlns:fx="http://javafx.com/fxml/1">
+</fx:root>

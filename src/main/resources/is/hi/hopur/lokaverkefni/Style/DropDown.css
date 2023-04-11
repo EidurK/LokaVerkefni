@@ -1,24 +1,27 @@
 .BG{
-    -fx-background-color: #393E4600;
-    -fx-pref-height: 29;
-    -fx-pref-width: 449;
+  -fx-background-color: #393E4600;
+  -fx-pref-height: 29;
+  -fx-pref-width: 449;
 }
-.combo-box {
-    -fx-background-color: #393E46;
-    -fx-pref-height: 29;
-    -fx-pref-width: 449;
-}
-.combo-box .arrow{
-    -fx-background-color: #eeeeee;
-    -fx-rotate: 90;
-}
-.progress-bar > .track{
-    -fx-background-color: #62656C;
-    -fx-background-radius:27;
 
+.combo-box {
+  -fx-background-color: #393E46;
+  -fx-pref-height: 29;
+  -fx-pref-width: 449;
 }
+
+.combo-box .arrow{
+  -fx-background-color: #eeeeee;
+  -fx-rotate: 90;
+}
+
+.progress-bar > .track{
+  -fx-background-color: #62656C;
+  -fx-background-radius:27;
+}
+
 .progress-bar > .bar{
-    -fx-background-color: #00adb5;
-    -fx-pref-height: 18;
-    -fx-background-radius: 27;
+  -fx-background-color: #00adb5;
+  -fx-pref-height: 18;
+  -fx-background-radius: 27;
 }
