@@ -1,0 +1,27 @@
+.AnchorPane{
+  -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.BG{
+  -fx-fill: #222831;
+}
+.AddButton{
+  -fx-background-color: #00ADB5;
+  -fx-text-fill: #ffffff;
+}
+.scroll-pane > .viewport{
+  -fx-background-color: transparent;
+}
+.scroll-pane{
+  -fx-background-color: #222831;
+}
+.scroll-bar:vertical {
+  -fx-background-color: #ffffff10;
+  -fx-background-radius: 30;
+}
+.scroll-bar:vertical .thumb{
+  -fx-background-color: #00ADB5;
+}
+.list-view{
+  -fx-background-color: #222831;
+}

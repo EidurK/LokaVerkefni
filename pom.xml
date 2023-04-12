@@ -59,7 +59,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>is.hi.hopur.lokaverkefni/is.hi.hopur.lokaverkefni.CheckboxingApplication</mainClass>
+                            <mainClass>is.hi.hopur.lokaverkefni.vidmot.CheckboxingApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
@@ -75,7 +75,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mainClass>is.hi.hopur.lokaverkefni.CheckboxingApplication</mainClass>
+                    <mainClass>is.hi.hopur.lokaverkefni.vidmot.CheckboxingApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

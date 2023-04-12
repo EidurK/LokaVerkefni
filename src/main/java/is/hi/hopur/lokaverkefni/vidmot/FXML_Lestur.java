@@ -1,4 +1,4 @@
-package is.hi.hopur.lokaverkefni;
+package is.hi.hopur.lokaverkefni.vidmot;
 
 import javafx.fxml.FXMLLoader;
 

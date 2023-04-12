@@ -1,11 +1,11 @@
-package is.hi.hopur.lokaverkefni;
+package is.hi.hopur.lokaverkefni.vidmot;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
-public class TaskView extends AnchorPane{
+public class Task extends AnchorPane{
     @FXML
     private AnchorPane fxTaskAnchor;
     @FXML
@@ -13,7 +13,7 @@ public class TaskView extends AnchorPane{
     @FXML
     private CheckBox fxCheckBox;
 
-    public TaskView(){
+    public Task(){
         FXML_Lestur.lesa(this, "task-view.fxml");
     }
     public void setLabelText(String s){

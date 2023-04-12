@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane
+        maxHeight="-Infinity"
+        maxWidth="-Infinity"
+        minHeight="-Infinity"
+        minWidth="-Infinity"
+        prefHeight="480.0"
+        prefWidth="460.0"
+        styleClass="AnchorPane"
+        stylesheets="@Style/MainStyle.css"
+        xmlns="http://javafx.com/javafx/19"
+        xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Rectangle
+                arcHeight="30.0"
+                arcWidth="30.0"
+                height="480.0"
+                stroke="BLACK"
+                strokeType="INSIDE"
+                styleClass="BG"
+                width="460.0"
+                AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0"
+        />
+        <Button
+                fx:id="fxAddProjectButton"
+                layoutX="150.0"
+                layoutY="385.0"
+                mnemonicParsing="false"
+                prefHeight="27.0"
+                prefWidth="160.0"
+                styleClass="AddButton"
+                text="New
+Project"
+        />
+        <ScrollPane
+                hbarPolicy="NEVER"
+                layoutY="44.0"
+                prefHeight="324.0"
+                prefWidth="460.0"
+                styleClass="BG"
+                vbarPolicy="ALWAYS">
+            <content>
+                <ListView
+                        fx:id="fxListView"
+                        prefHeight="324.0"
+                        prefWidth="460.0"
+                />
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

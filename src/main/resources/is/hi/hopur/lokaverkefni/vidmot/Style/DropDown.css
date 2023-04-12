@@ -17,6 +17,13 @@
   -fx-pref-height: 8;
 }
 
+.combo-box-popup .list-view{
+  -fx-background-color: #424951;
+}
+.combo-box:showing .arrow{
+  -fx-rotate: 0;
+}
+
 .progress-bar > .track{
   -fx-background-color: #787a86;
   -fx-background-radius:27;
