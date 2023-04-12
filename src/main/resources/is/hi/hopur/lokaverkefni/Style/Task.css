@@ -1,0 +1,24 @@
+.body{
+    -fx-background-color: #393E46;
+}
+.label{
+    -fx-text-fill: #eeeeee;
+}
+.check-box .box{
+    -fx-border-color: #00ADB5;
+    -fx-border-radius: 4;
+    -fx-background-color: #d9d9d988;
+    -fx-background-radius: 4;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+}
+.check-box:selected .box{
+    -fx-border-color: #44ee77;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+}
+.check-box:selected .mark{
+    -fx-background-color:#44ee77;
+}

@@ -1,16 +1,39 @@
-<?xml version="1.0" ecoding="UTF-8"?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
+<?xml
+        version="1.0"
+        encoding="UTF-8"?>
+
+<?import
+        javafx.scene.control.CheckBox?>
+<?import
+        javafx.scene.control.Label?>
+<?import
+        javafx.scene.layout.AnchorPane?>
 
 <fx:root
-  type="javafx.scene.layout.AnchorPane"
-  fx:id="fxTaskPane"
-  prefHeight="30"
-  prefWidth="30">
-<children>
-  <CheckBox>
-
-  </CheckBox>
-</children>
+        type="javafx.scene.layout.AnchorPane"
+        fx:id="fxTaskAnchor"
+        prefHeight="29.0"
+        prefWidth="449.0"
+        styleClass="body"
+        stylesheets="@Style/Task.css"
+        xmlns="http://javafx.com/javafx/19"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="is.hi.hopur.lokaverkefni.TaskView">
+   <children>
+      <CheckBox
+              fx:id="fxCheckbox"
+              layoutX="23.0"
+              layoutY="6.0"
+              mnemonicParsing="false"
+              prefHeight="16.0"
+              prefWidth="16.0"
+      />
+      <Label
+              fx:id="fxLabel"
+              layoutX="52.0"
+              layoutY="6.0"
+              prefHeight="17.0"
+              prefWidth="381.0"
+      />
+   </children>
 </fx:root>
-
