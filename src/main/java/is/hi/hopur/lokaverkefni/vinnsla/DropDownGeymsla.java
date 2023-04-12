@@ -13,4 +13,8 @@ public class DropDownGeymsla {
     public ObservableList<DropDown> getDropDownObservableList() {
         return dropDownObservableList;
     }
+    public void addDropDown(){
+        DropDown dropDown = new DropDown();
+        dropDownObservableList.add(dropDown);
+    }
 }

@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.layout.AnchorPane?>
 
-<fx:root
-        type="AnchorPane"
-        fx:id="fxDropDownAnchorPane"
-        stylesheets="@Style/DropDown.css"
-        xmlns="http://javafx.com/javafx/19"
-        xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="fxDropDownAnchorPane" prefHeight="29.0" prefWidth="435.0" stylesheets="@Style/DropDown.css" type="AnchorPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <javafx.scene.control.ComboBox
-                fx:id="fxComboBox"
-                prefHeight="29.0"
-                prefWidth="449.0"
-                styleClass="combo-box"
-                stylesheets="@Style/DropDown.css">
+        <javafx.scene.control.ComboBox fx:id="fxComboBox" prefHeight="29.0" prefWidth="449.0" styleClass="combo-box" stylesheets="@Style/DropDown.css">
         </javafx.scene.control.ComboBox>
-        <ProgressBar
-                fx:id="fxProgressBar"
-                layoutX="206.0"
-                layoutY="5.0"
-                prefWidth="200.0"
-                progress="0.0"
-        />
+        <ProgressBar fx:id="fxProgressBar" layoutX="206.0" layoutY="5.0" prefWidth="200.0" progress="0.0" />
     </children>
 </fx:root>

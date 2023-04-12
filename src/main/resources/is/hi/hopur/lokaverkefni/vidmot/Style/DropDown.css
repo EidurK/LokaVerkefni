@@ -1,7 +1,8 @@
 .BG{
   -fx-background-color: #393E4600;
   -fx-pref-height: 29;
-  -fx-pref-width: 449;
+  /* hér var 449 áður*/
+  -fx-pref-width: 430;
 }
 
 .combo-box {
