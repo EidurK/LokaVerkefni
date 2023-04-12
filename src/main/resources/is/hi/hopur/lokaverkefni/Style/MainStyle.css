@@ -5,3 +5,6 @@
 .BG{
   -fx-fill: #222831;
 }
+.AddButton{
+  -fx-background-color: #00ADB5;
+}
