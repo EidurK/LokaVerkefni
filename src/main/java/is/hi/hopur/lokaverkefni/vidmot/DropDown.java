@@ -28,11 +28,10 @@ public class DropDown extends AnchorPane  {
     public DropDown(){
         FXML_Lestur.lesa(this, "dropdown-view.fxml");
         TaskGeymsla taskGeymsla = new TaskGeymsla();
-
-        fxComboBox.setSkin(new ComboBoxListViewSkin<AnchorPane>(fxComboBox){
+        fxComboBox.setSkin(new ComboBoxListViewSkin<>(fxComboBox) {
             @Override
             public void hide() {
-              setHideOnClick(false);
+                setHideOnClick(false);
             }
         });
         fxComboBox.setItems(taskGeymsla.getItemObservableList());

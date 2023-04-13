@@ -38,7 +38,7 @@
 }
 
 .text-field{
-  -fx-border-color: #00000030;
+  -fx-border-color: #ffffff00;
   -fx-border-radius: 4;
   -fx-text-fill: #ffffff;
   -fx-prompt-text-fill: #ffffff30;
