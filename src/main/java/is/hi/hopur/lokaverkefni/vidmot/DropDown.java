@@ -2,7 +2,6 @@ package is.hi.hopur.lokaverkefni.vidmot;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ProgressBar;
-import javafx.scene.control.Skinnable;
 import javafx.scene.control.skin.ComboBoxListViewSkin;
 import javafx.scene.layout.AnchorPane;
 import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
@@ -31,6 +30,7 @@ public class DropDown extends AnchorPane  {
               setHideOnClick(false);
             }
         });
-        fxComboBox.setItems(taskGeymsla.getTaskObservableList());
+        fxComboBox.setItems(taskGeymsla.getItemObservableList());
+        fxProgressBar.progressProperty().bind(taskGeymsla.checkedPercentageProperty());
     }
 }

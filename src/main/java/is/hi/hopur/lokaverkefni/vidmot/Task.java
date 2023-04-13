@@ -16,6 +16,7 @@ public class Task extends AnchorPane{
 
     public Task(){
         FXML_Lestur.lesa(this, "task-view.fxml");
+        this.setId("task");
     }
     public void setLabelText(String s){
         fxTextField.setText(s);
@@ -31,5 +32,6 @@ public class Task extends AnchorPane{
     public CheckBox getFxCheckBox() {
         return fxCheckBox;
     }
+
 
 }

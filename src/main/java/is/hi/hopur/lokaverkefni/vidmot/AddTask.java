@@ -19,6 +19,7 @@ public class AddTask extends AnchorPane {
 
     public AddTask(){
         FXML_Lestur.lesa(this, "addTask-view.fxml");
+        this.setId("ekki task");
     }
 
     public AnchorPane getFxAddItemAnchorPane() {
