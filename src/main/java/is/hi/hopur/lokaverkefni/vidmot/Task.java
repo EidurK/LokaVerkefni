@@ -17,6 +17,7 @@ public class Task extends AnchorPane{
     public Task(){
         FXML_Lestur.lesa(this, "task-view.fxml");
         this.setId("task");
+        this.setFocusTraversable(false);
     }
     public void setLabelText(String s){
         fxTextField.setText(s);

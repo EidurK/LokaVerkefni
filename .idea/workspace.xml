@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="Bjó til verkefni">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/AddTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/AddTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/MainApplication-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/MainApplication-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/Style/DropDown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/Style/DropDown.css" afterDir="false" />
@@ -22,6 +24,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

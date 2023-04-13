@@ -6,6 +6,7 @@ import javafx.collections.ListChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.SingleSelectionModel;
 import javafx.scene.control.skin.ComboBoxListViewSkin;
 import javafx.scene.layout.AnchorPane;
 import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
@@ -32,6 +33,17 @@ public class DropDown extends AnchorPane  {
             @Override
             public void hide() {
                 setHideOnClick(false);
+            }
+        });
+        fxComboBox.selectionModelProperty().set(new SingleSelectionModel<AnchorPane>() {
+            @Override
+            protected AnchorPane getModelItem(int i) {
+                return null;
+            }
+
+            @Override
+            protected int getItemCount() {
+                return 0;
             }
         });
         fxComboBox.setItems(taskGeymsla.getItemObservableList());
