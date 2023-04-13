@@ -29,11 +29,17 @@
   -fx-background-radius:27;
   -fx-pref-height: 14;
   -fx-pref-width: 217;
-
 }
 
 .progress-bar > .bar{
   -fx-background-color: #00d9e1;
   -fx-pref-height: 18;
   -fx-background-radius: 27;
+}
+
+.text-field{
+  -fx-border-color: #00000030;
+  -fx-border-radius: 4;
+  -fx-text-fill: #ffffff;
+  -fx-prompt-text-fill: #ffffff30;
 }

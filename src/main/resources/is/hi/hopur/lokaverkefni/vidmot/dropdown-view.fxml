@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<fx:root
-        fx:id="fxDropDownAnchorPane"
-        prefHeight="29.0"
-        prefWidth="430.0"
-        stylesheets="@Style/DropDown.css"
-        type="AnchorPane"
-        xmlns="http://javafx.com/javafx/17.0.2-ea"
-        xmlns:fx="http://javafx.com/fxml/1">
+
+<fx:root fx:id="fxDropDownAnchorPane" prefHeight="29.0" prefWidth="430.0" stylesheets="@Style/DropDown.css" type="AnchorPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <javafx.scene.control.ComboBox
-                fx:id="fxComboBox"
-                prefHeight="29.0"
-                prefWidth="460.0"
-                styleClass="combo-box"
-                stylesheets="@Style/DropDown.css">
+        <javafx.scene.control.ComboBox fx:id="fxComboBox" prefHeight="29.0" prefWidth="460.0" styleClass="combo-box" stylesheets="@Style/DropDown.css">
         </javafx.scene.control.ComboBox>
-        <ProgressBar
-                fx:id="fxProgressBar"
-                layoutX="206.0"
-                layoutY="5.0"
-                prefWidth="200.0"
-                progress="0.0"
-        />
+        <ProgressBar fx:id="fxProgressBar" layoutX="206.0" layoutY="5.0" prefWidth="200.0" progress="0.0" />
+      <TextField layoutX="6.0" layoutY="3.0" prefHeight="29.0" prefWidth="192.0" promptText="Name of Project" styleClass="BG" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="2.0" />
     </children>
 </fx:root>
