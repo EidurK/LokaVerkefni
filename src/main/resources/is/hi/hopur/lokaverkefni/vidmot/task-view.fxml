@@ -1,32 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
 
-<fx:root
-        type="javafx.scene.layout.AnchorPane"
-        fx:id="fxTaskAnchor"
-        prefHeight="29.0"
-        prefWidth="449.0"
-        styleClass="body"
-        stylesheets="@Style/Task.css"
-        xmlns="http://javafx.com/javafx/19"
-        xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="fxTaskAnchor" prefHeight="30.0" prefWidth="400.0" styleClass="body" stylesheets="@Style/Task.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <CheckBox
-              fx:id="fxCheckbox"
-              layoutX="23.0"
-              layoutY="6.0"
-              mnemonicParsing="false"
-              prefHeight="16.0"
-              prefWidth="16.0"
-      />
-      <Label
-              fx:id="fxLabel"
-              layoutX="52.0"
-              layoutY="6.0"
-              prefHeight="17.0"
-              prefWidth="381.0"
-      />
+      <CheckBox fx:id="fxCheckbox" layoutX="23.0" layoutY="6.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="16.0" AnchorPane.leftAnchor="25.0" />
+      <TextField fx:id="fxTextField" layoutX="56.0" layoutY="3.0" prefHeight="25.0" prefWidth="338.0" promptText="Input task" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="2.0" />
    </children>
 </fx:root>

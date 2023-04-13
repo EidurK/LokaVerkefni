@@ -1,7 +1,6 @@
 .BG{
   -fx-background-color: #393E4600;
   -fx-pref-height: 29;
-  /* hér var 449 áður*/
 }
 
 .combo-box {
@@ -19,6 +18,7 @@
 
 .combo-box-popup .list-view{
   -fx-background-color: #424951;
+  -fx-pref-width: 449;
 }
 .combo-box:showing .arrow{
   -fx-rotate: 0;

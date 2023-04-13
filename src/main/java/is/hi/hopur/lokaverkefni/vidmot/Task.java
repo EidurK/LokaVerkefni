@@ -3,13 +3,14 @@ package is.hi.hopur.lokaverkefni.vidmot;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 public class Task extends AnchorPane{
     @FXML
     private AnchorPane fxTaskAnchor;
     @FXML
-    private Label fxLabel;
+    private TextField fxTextField;
     @FXML
     private CheckBox fxCheckBox;
 
@@ -17,14 +18,14 @@ public class Task extends AnchorPane{
         FXML_Lestur.lesa(this, "task-view.fxml");
     }
     public void setLabelText(String s){
-        fxLabel.setText(s);
+        fxTextField.setText(s);
     }
     public AnchorPane getFxTaskAnchor() {
         return fxTaskAnchor;
     }
 
-    public Label getFxLabel() {
-        return fxLabel;
+    public TextField getFxTextField() {
+        return fxTextField;
     }
 
     public CheckBox getFxCheckBox() {

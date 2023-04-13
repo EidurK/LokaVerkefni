@@ -1,18 +1,29 @@
 package is.hi.hopur.lokaverkefni.vinnsla;
 
+import is.hi.hopur.lokaverkefni.vidmot.AddTask;
 import is.hi.hopur.lokaverkefni.vidmot.Task;
-import javafx.beans.property.SimpleListProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.layout.AnchorPane;
 
 public class TaskGeymsla {
-    private ObservableList<Task> taskObservableList;
+    private ObservableList<AnchorPane> taskObservableList;
     public TaskGeymsla(){
-        taskObservableList = new SimpleListProperty<>();
+        taskObservableList = FXCollections.observableArrayList();
+        AddTask addTaskButton = new AddTask();
+        addTaskButton.getFxAddItemButton().setOnAction(actionEvent -> {
+            addItem(new Task());
+        });
+        taskObservableList.add(addTaskButton);
     }
-    public void addTask(Task t){
+    public void addItem(AnchorPane t){
         taskObservableList.add(t);
     }
-    public ObservableList<Task> getTaskObservableList(){
+    public void addTask(Task t){
+        addItem(t);
+        t.getFxTextField().setFocusTraversable(true);
+    }
+    public ObservableList<AnchorPane> getTaskObservableList(){
         return taskObservableList;
     }
 }
