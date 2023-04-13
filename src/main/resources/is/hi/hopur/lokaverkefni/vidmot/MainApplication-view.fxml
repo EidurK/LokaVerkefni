@@ -1,62 +1,16 @@
-<?xml
-        version="1.0"
-        encoding="UTF-8"?>
-<?import
-        javafx.geometry.*?>
-<?import
-        javafx.scene.control.*?>
-<?import
-        javafx.scene.layout.*?>
-<AnchorPane
-        maxHeight="-Infinity"
-        maxWidth="-Infinity"
-        minHeight="-Infinity"
-        minWidth="-Infinity"
-        prefHeight="480.0"
-        prefWidth="500.0"
-        styleClass="AnchorPane"
-        stylesheets="@Style/MainStyle.css"
-        xmlns="http://javafx.com/javafx/17.0.2-ea"
-        xmlns:fx="http://javafx.com/fxml/1"
-        fx:controller="is.hi.hopur.lokaverkefni.vidmot.CheckboxingController">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="500.0" styleClass="AnchorPane" stylesheets="@Style/MainStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is.hi.hopur.lokaverkefni.vidmot.CheckboxingController">
     <children>
-        <Button
-                fx:id="fxAddProjectButton"
-                layoutX="150.0"
-                layoutY="385.0"
-                mnemonicParsing="false"
-                onAction="#newProjectButtonHandler"
-                prefHeight="27.0"
-                prefWidth="160.0"
-                styleClass="AddButton"
-                text="New Project"
-                AnchorPane.leftAnchor="170.0"
-                AnchorPane.rightAnchor="170.0"
-        />
-        <ScrollPane
-                hbarPolicy="NEVER"
-                layoutY="44.0"
-                prefHeight="324.0"
-                prefWidth="460.0"
-                styleClass="BG"
-                vbarPolicy="ALWAYS"
-                AnchorPane.bottomAnchor="112.0"
-                AnchorPane.leftAnchor="0.0"
-                AnchorPane.rightAnchor="0.0"
-                AnchorPane.topAnchor="44.0">
-            <content>
-                <ListView
-                        fx:id="fxListView"
-                        prefHeight="324.0"
-                        prefWidth="500.0">
-                    <padding>
-                        <Insets
-                                left="10.0"
-                                right="5.0"
-                        />
-                    </padding>
-                </ListView>
-            </content>
-        </ScrollPane>
+        <Button fx:id="fxAddProjectButton" layoutX="150.0" layoutY="385.0" mnemonicParsing="false" onAction="#newProjectButtonHandler" prefHeight="27.0" prefWidth="160.0" styleClass="AddButton" text="New Project" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0" />
+          <ListView fx:id="fxListView" layoutY="49.0" prefHeight="324.0" prefWidth="500.0">
+              <padding>
+                  <Insets left="10.0" right="5.0" />
+              </padding>
+          </ListView>
     </children>
 </AnchorPane>

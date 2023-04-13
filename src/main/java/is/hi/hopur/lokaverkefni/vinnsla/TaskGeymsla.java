@@ -39,15 +39,18 @@ public class TaskGeymsla {
         return percentage;
     }
 
+    public AddTask getAddTaskButton() {
+        return addTaskButton;
+    }
+
+    private AddTask addTaskButton;
+
     public TaskGeymsla(){
-        AddTask addTaskButton = new AddTask();
-        addTaskButton.getFxAddItemButton().setOnAction(actionEvent -> {
-            addTask(new Task());
-        });
+        addTaskButton = new AddTask();
         itemObservableList.add(addTaskButton);
     }
     public void addItem(AnchorPane t){
-        itemObservableList.add(t);
+        itemObservableList.add(0,t);
         if(t.getClass().equals(Task.class)){
             Task task = (Task) t;
             task.getFxCheckBox().selectedProperty().addListener(c ->{
@@ -57,8 +60,8 @@ public class TaskGeymsla {
         }
         percentage.set(getChecked());
     }
-    public void addTask(Task t){
-        addItem(t);
+    public void addTask(){
+        addItem(new Task());
     }
     public ObservableList<AnchorPane> getItemObservableList(){
         return itemObservableList;

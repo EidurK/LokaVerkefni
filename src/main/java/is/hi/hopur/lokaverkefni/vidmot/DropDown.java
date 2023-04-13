@@ -29,13 +29,17 @@ public class DropDown extends AnchorPane  {
     public DropDown(){
         FXML_Lestur.lesa(this, "dropdown-view.fxml");
         TaskGeymsla taskGeymsla = new TaskGeymsla();
+        taskGeymsla.getAddTaskButton().getFxAddItemButton().setOnAction(actionEvent ->{
+            taskGeymsla.addTask();
+        });
+        fxComboBox.setVisibleRowCount(6);
         fxComboBox.setSkin(new ComboBoxListViewSkin<>(fxComboBox) {
             @Override
             public void hide() {
                 setHideOnClick(false);
             }
         });
-        fxComboBox.selectionModelProperty().set(new SingleSelectionModel<AnchorPane>() {
+        fxComboBox.selectionModelProperty().set(new SingleSelectionModel<>() {
             @Override
             protected AnchorPane getModelItem(int i) {
                 return null;
