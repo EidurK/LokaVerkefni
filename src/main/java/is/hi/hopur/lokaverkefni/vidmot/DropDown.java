@@ -10,6 +10,9 @@ import javafx.scene.control.SingleSelectionModel;
 import javafx.scene.control.skin.ComboBoxListViewSkin;
 import javafx.scene.layout.AnchorPane;
 import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
+import javafx.scene.layout.Background;
+import javafx.scene.paint.Paint;
+
 public class DropDown extends AnchorPane  {
     @FXML
     private AnchorPane fxDropDownAnchorPane;
@@ -39,6 +42,14 @@ public class DropDown extends AnchorPane  {
                 setHideOnClick(false);
             }
         });
+
+        taskGeymsla.getPercentage().addListener(change -> {
+            //if (taskGeymsla.getPercentage().getValue() == 1) fxProgressBar.setBackground(Background.fill(Paint.valueOf("#45f574")));
+            if (taskGeymsla.getPercentage().getValue() == 1) fxProgressBar.getStyleClass().add("finished");
+            else fxProgressBar.getStyleClass().remove("finished");
+
+        }) ;
+
         fxComboBox.selectionModelProperty().set(new SingleSelectionModel<>() {
             @Override
             protected AnchorPane getModelItem(int i) {

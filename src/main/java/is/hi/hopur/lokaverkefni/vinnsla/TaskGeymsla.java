@@ -48,6 +48,8 @@ public class TaskGeymsla {
     public TaskGeymsla(){
         addTaskButton = new AddTask();
         itemObservableList.add(addTaskButton);
+
+
     }
     public void addItem(AnchorPane t){
         itemObservableList.add(0,t);

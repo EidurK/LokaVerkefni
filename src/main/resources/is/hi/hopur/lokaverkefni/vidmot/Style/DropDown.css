@@ -37,6 +37,10 @@
   -fx-background-radius: 27;
 }
 
+.finished > .bar {
+    -fx-background-color: #45f574;
+}
+
 .text-field{
   -fx-border-color: #ffffff00;
   -fx-border-radius: 4;
