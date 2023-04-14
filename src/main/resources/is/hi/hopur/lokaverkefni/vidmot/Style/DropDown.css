@@ -19,6 +19,7 @@
 .combo-box-popup .list-view{
   -fx-background-color: #424951;
   -fx-pref-width: 449;
+  -fx-pref-height: 120;
 }
 .combo-box:showing .arrow{
   -fx-rotate: 0;

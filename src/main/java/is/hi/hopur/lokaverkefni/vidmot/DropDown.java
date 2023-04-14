@@ -44,7 +44,6 @@ public class DropDown extends AnchorPane  {
         });
 
         taskGeymsla.getPercentage().addListener(change -> {
-            //if (taskGeymsla.getPercentage().getValue() == 1) fxProgressBar.setBackground(Background.fill(Paint.valueOf("#45f574")));
             if (taskGeymsla.getPercentage().getValue() == 1) fxProgressBar.getStyleClass().add("finished");
             else fxProgressBar.getStyleClass().remove("finished");
 
