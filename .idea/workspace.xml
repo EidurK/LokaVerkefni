@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="Bætti við grænan lit á progress bar þegar öll task eru búin">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/Style/DropDown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/Style/DropDown.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +78,7 @@
       <workItem from="1681339688770" duration="1254000" />
       <workItem from="1681378118145" duration="20016000" />
       <workItem from="1681401740863" duration="5983000" />
+      <workItem from="1681488082564" duration="89000" />
     </task>
     <task id="LOCAL−00001" summary="Bætti við grænan lit á progress bar þegar öll task eru búin">
       <created>1681422629727</created>
