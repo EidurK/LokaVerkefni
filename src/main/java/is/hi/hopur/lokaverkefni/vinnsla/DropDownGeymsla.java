@@ -5,6 +5,7 @@ import javafx.beans.property.SimpleListProperty;
 import javafx.collections.ObservableList;
 
 public class DropDownGeymsla {
+
     private ObservableList<DropDown> dropDownObservableList;
     public DropDownGeymsla(){
         dropDownObservableList = new SimpleListProperty<>();
@@ -12,6 +13,9 @@ public class DropDownGeymsla {
 
     public ObservableList<DropDown> getDropDownObservableList() {
         return dropDownObservableList;
+    }
+    public void setDropDownObservableList(ObservableList<DropDown> dropDownObservableList) {
+        this.dropDownObservableList = dropDownObservableList;
     }
     public void addDropDown(){
         DropDown dropDown = new DropDown();

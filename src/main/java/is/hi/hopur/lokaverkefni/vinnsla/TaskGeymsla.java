@@ -17,6 +17,15 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class TaskGeymsla {
     private ObservableList<AnchorPane> itemObservableList = FXCollections.observableArrayList();
+
+    public ObservableList<Task> getTaskObservableList() {
+        return taskObservableList;
+    }
+
+    public void setTaskObservableList(ObservableList<Task> taskObservableList) {
+        this.taskObservableList = taskObservableList;
+    }
+
     private ObservableList<Task> taskObservableList = FXCollections.observableArrayList();
 
     public Double getChecked() {
