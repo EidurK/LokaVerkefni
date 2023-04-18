@@ -1,8 +1,4 @@
 package is.hi.hopur.lokaverkefni.vidmot;
-import javafx.beans.binding.Bindings;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.collections.ListChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ProgressBar;
@@ -10,10 +6,9 @@ import javafx.scene.control.SingleSelectionModel;
 import javafx.scene.control.skin.ComboBoxListViewSkin;
 import javafx.scene.layout.AnchorPane;
 import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
-import javafx.scene.layout.Background;
-import javafx.scene.paint.Paint;
 
-public class DropDown extends AnchorPane  {
+public class DropDownController extends AnchorPane  {
+    private TaskGeymsla taskGeymsla;
     @FXML
     private AnchorPane fxDropDownAnchorPane;
     @FXML
@@ -29,9 +24,9 @@ public class DropDown extends AnchorPane  {
     public ProgressBar getFxProgressBar() {
         return fxProgressBar;
     }
-    public DropDown(){
+    public DropDownController(){
         FXML_Lestur.lesa(this, "dropdown-view.fxml");
-        TaskGeymsla taskGeymsla = new TaskGeymsla();
+        taskGeymsla = new TaskGeymsla();
         taskGeymsla.getAddTaskButton().getFxAddItemButton().setOnAction(actionEvent ->{
             taskGeymsla.addTask();
         });

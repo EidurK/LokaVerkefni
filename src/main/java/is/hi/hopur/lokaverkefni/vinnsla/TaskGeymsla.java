@@ -1,38 +1,40 @@
 package is.hi.hopur.lokaverkefni.vinnsla;
-
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.exc.StreamWriteException;
+import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ser.std.JsonValueSerializer;
 import is.hi.hopur.lokaverkefni.vidmot.AddTask;
 import is.hi.hopur.lokaverkefni.vidmot.Task;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.beans.value.ObservableValueBase;
 import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
-import javafx.scene.control.CheckBox;
 import javafx.scene.layout.AnchorPane;
 
-import java.util.concurrent.atomic.AtomicReference;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Path;
 
 public class TaskGeymsla {
     private ObservableList<AnchorPane> itemObservableList = FXCollections.observableArrayList();
-
+    private AddTask addTaskButton;
     public ObservableList<Task> getTaskObservableList() {
         return taskObservableList;
     }
-
     public void setTaskObservableList(ObservableList<Task> taskObservableList) {
         this.taskObservableList = taskObservableList;
     }
-
     private ObservableList<Task> taskObservableList = FXCollections.observableArrayList();
-
     public Double getChecked() {
         return checked.getValue();
     }
-
-
     private ObservableValue<Double> checked = new ObservableValueBase<>() {
         @Override
         public Double getValue() {
@@ -42,23 +44,17 @@ public class TaskGeymsla {
             return Bindings.size((new FilteredList<>(taskObservableList, task -> task.getFxCheckBox().isSelected()))).doubleValue()/Bindings.size(taskObservableList).doubleValue();
         }
     };
-
     private SimpleDoubleProperty percentage = new SimpleDoubleProperty();
     public SimpleDoubleProperty getPercentage(){
         return percentage;
     }
-
     public AddTask getAddTaskButton() {
         return addTaskButton;
     }
-
-    private AddTask addTaskButton;
-
+    private File file = new File("target/Data.json");
     public TaskGeymsla(){
         addTaskButton = new AddTask();
         itemObservableList.add(addTaskButton);
-
-
     }
     public void addItem(AnchorPane t){
         itemObservableList.add(0,t);
@@ -72,9 +68,26 @@ public class TaskGeymsla {
         percentage.set(getChecked());
     }
     public void addTask(){
+        Task t = new Task();
+        t.getFxCheckBox().selectedProperty().addListener(change -> saveTask(t));
+        t.getFxCheckBox().textProperty().addListener(change -> saveTask(t));
         addItem(new Task());
     }
     public ObservableList<AnchorPane> getItemObservableList(){
         return itemObservableList;
+    }
+    private void saveTask(Task t){
+        System.out.println("saving...");
+        taskObservableList.add(t);
+        ObjectMapper objectMapper = new ObjectMapper();
+        for(Task task: taskObservableList){
+            try {
+                objectMapper.writeValue(new File("target/Data.json"), task);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+
     }
 }
