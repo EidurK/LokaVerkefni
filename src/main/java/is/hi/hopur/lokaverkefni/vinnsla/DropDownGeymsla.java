@@ -1,20 +1,20 @@
 package is.hi.hopur.lokaverkefni.vinnsla;
-import is.hi.hopur.lokaverkefni.vidmot.DropDownController;
+import is.hi.hopur.lokaverkefni.vidmot.DropDown;
 import javafx.beans.property.SimpleListProperty;
 import javafx.collections.ObservableList;
 public class DropDownGeymsla {
-    private ObservableList<DropDownController> dropDownObservableList;
+    private ObservableList<DropDown> dropDownObservableList;
     public DropDownGeymsla(){
         dropDownObservableList = new SimpleListProperty<>();
     }
-    public ObservableList<DropDownController> getDropDownObservableList() {
+    public ObservableList<DropDown> getDropDownObservableList() {
         return dropDownObservableList;
     }
-    public void setDropDownObservableList(ObservableList<DropDownController> dropDownObservableList) {
+    public void setDropDownObservableList(ObservableList<DropDown> dropDownObservableList) {
         this.dropDownObservableList = dropDownObservableList;
     }
     public void addDropDown(){
-        DropDownController dropDown = new DropDownController();
+        DropDown dropDown = new DropDown();
         dropDownObservableList.add(dropDown);
     }
 }
