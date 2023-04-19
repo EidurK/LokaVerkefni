@@ -13,9 +13,10 @@ public class TaskDeserializer extends JsonDeserializer<Task> {
     @Override
     public Task deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException{
         Task task = new Task();
-        JsonNode Node = jsonParser.getCodec().readTree(jsonParser);
-        task.setChecked(Node.get("isChecked").asBoolean());
-        task.setLabelText(Node.get("taskName").asText());
+        JsonNode root = deserializationContext.readTree(jsonParser);
+        JsonNode taskNode = root.get("DropDowns").get("tasks");
+        task.setChecked(taskNode.get("isChecked").asBoolean());
+        task.setLabelText(taskNode.get("text").asText());
         return task;
     }
 }

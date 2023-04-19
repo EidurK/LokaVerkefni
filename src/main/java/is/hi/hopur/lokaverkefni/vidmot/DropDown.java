@@ -34,8 +34,8 @@ public class DropDown extends AnchorPane implements JsonSerializable {
     public TextField getFxTextField() {
         return fxTextField;
     }
-    public void setFxTextField(TextField fxTextField) {
-        this.fxTextField = fxTextField;
+    public void setFxTextField(String s) {
+        fxTextField.setText(s);
     }
     @FXML
     private TextField fxTextField;
