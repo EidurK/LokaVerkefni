@@ -9,6 +9,10 @@
   -fx-background-color: #00ADB5;
   -fx-text-fill: #ffffff;
 }
+.SaveButton{
+  -fx-background-color: #85a77f;
+  -fx-text-fill: #ffffff;
+}
 .scroll-pane > .viewport{
   -fx-background-color: transparent;
 }

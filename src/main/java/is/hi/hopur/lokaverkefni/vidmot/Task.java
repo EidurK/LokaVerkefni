@@ -31,7 +31,6 @@ public class Task extends AnchorPane implements JsonSerializable {
     public void setChecked(Boolean b){
         fxCheckBox.selectedProperty().set(b);
     }
-
     @Override
     public void serialize(JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
         jsonGenerator.writeStartObject();
@@ -39,9 +38,7 @@ public class Task extends AnchorPane implements JsonSerializable {
         jsonGenerator.writeBooleanField("isChecked", fxCheckBox.isSelected());
         jsonGenerator.writeEndObject();
     }
-
     @Override
     public void serializeWithType(JsonGenerator jsonGenerator, SerializerProvider serializerProvider, TypeSerializer typeSerializer) throws IOException {
-
     }
 }

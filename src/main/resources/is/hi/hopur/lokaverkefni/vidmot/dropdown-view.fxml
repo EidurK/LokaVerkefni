@@ -29,6 +29,7 @@
                 progress="0.0"
         />
         <TextField
+                fx:id = "fxTextField"
                 layoutX="6.0"
                 layoutY="3.0"
                 prefHeight="29.0"
