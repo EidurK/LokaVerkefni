@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="Bætti við grænan lit á progress bar þegar öll task eru búin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/AddTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/AddTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDownController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDownController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDownController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/FXML_Lestur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/FXML_Lestur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownGeymslaLesari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/DropDownGeymsla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/DropDownGeymsla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/TaskGeymsla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/TaskGeymsla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
@@ -94,7 +95,7 @@
       <workItem from="1681737479660" duration="6190000" />
       <workItem from="1681746775173" duration="2485000" />
       <workItem from="1681761034890" duration="1786000" />
-      <workItem from="1681843790980" duration="9966000" />
+      <workItem from="1681843790980" duration="10212000" />
     </task>
     <task id="LOCAL−00001" summary="Bætti við grænan lit á progress bar þegar öll task eru búin">
       <created>1681422629727</created>

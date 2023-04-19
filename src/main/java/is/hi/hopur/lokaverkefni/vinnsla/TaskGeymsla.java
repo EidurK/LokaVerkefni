@@ -15,13 +15,11 @@ import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.scene.layout.AnchorPane;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Path;
-
 public class TaskGeymsla {
     private ObservableList<AnchorPane> itemObservableList = FXCollections.observableArrayList();
     private AddTask addTaskButton;
@@ -87,7 +85,5 @@ public class TaskGeymsla {
                 throw new RuntimeException(e);
             }
         }
-
-
     }
 }
