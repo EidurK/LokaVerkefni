@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="Bætti við grænan lit á progress bar þegar öll task eru búin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskGeymslaDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownDesirializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownDesirializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/MainControllerDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownGeymslaDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/DropDownGeymsla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/DropDownGeymsla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/TaskGeymsla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/TaskGeymsla.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +88,7 @@
       <workItem from="1681761034890" duration="1786000" />
       <workItem from="1681843790980" duration="10212000" />
       <workItem from="1681911166444" duration="23791000" />
-      <workItem from="1681988736484" duration="7474000" />
+      <workItem from="1681988736484" duration="8624000" />
     </task>
     <task id="LOCAL−00001" summary="Bætti við grænan lit á progress bar þegar öll task eru búin">
       <created>1681422629727</created>

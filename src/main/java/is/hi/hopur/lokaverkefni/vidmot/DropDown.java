@@ -24,7 +24,16 @@ public class DropDown extends AnchorPane implements JsonSerializable {
         return taskGeymsla;
     }
     public void setTaskGeymsla(TaskGeymsla taskGeymsla) {
+        taskGeymsla.getAddTaskButton().getFxAddItemButton().setOnAction(actionEvent ->{
+            taskGeymsla.addTask();
+        });
         this.taskGeymsla = taskGeymsla;
+        fxComboBox.setItems(this.taskGeymsla.getItemObservableList());
+        fxProgressBar.progressProperty().bind(this.taskGeymsla.getPercentage());
+        this.taskGeymsla.getPercentage().addListener(change -> {
+            if (taskGeymsla.getPercentage().getValue() == 1) fxProgressBar.getStyleClass().add("finished");
+            else fxProgressBar.getStyleClass().remove("finished");
+        }) ;
     }
     private TaskGeymsla taskGeymsla;
     @FXML
@@ -39,14 +48,14 @@ public class DropDown extends AnchorPane implements JsonSerializable {
     public void setFxTextField(String s) {
         fxTextField.setText(s);
     }
+    public void setProgress(double d){
+        fxProgressBar.setProgress(d);
+    }
     @FXML
     private TextField fxTextField;
     public DropDown() {
         FXML_Lestur.lesa(this, "dropdown-view.fxml");
-        taskGeymsla = new TaskGeymsla();
-        taskGeymsla.getAddTaskButton().getFxAddItemButton().setOnAction(actionEvent ->{
-            taskGeymsla.addTask();
-        });
+        setTaskGeymsla(new TaskGeymsla());
         fxComboBox.setVisibleRowCount(6);
         fxComboBox.setSkin(new ComboBoxListViewSkin<>(fxComboBox) {
             @Override
@@ -54,10 +63,6 @@ public class DropDown extends AnchorPane implements JsonSerializable {
                 setHideOnClick(false);
             }
         });
-        taskGeymsla.getPercentage().addListener(change -> {
-            if (taskGeymsla.getPercentage().getValue() == 1) fxProgressBar.getStyleClass().add("finished");
-            else fxProgressBar.getStyleClass().remove("finished");
-        }) ;
         fxComboBox.selectionModelProperty().set(new SingleSelectionModel<>() {
             @Override
             protected AnchorPane getModelItem(int i) {
@@ -69,7 +74,6 @@ public class DropDown extends AnchorPane implements JsonSerializable {
             }
         });
         fxComboBox.setItems(taskGeymsla.getItemObservableList());
-        fxProgressBar.progressProperty().bind(taskGeymsla.getPercentage());
     }
     @Override
     public void serialize(JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
