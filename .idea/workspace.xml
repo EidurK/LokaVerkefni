@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="Bætti við grænan lit á progress bar þegar öll task eru búin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownDesirializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/MainControllerDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskGeymslaDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/CheckboxingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/DropDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vidmot/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownDesirializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownDesirializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/MainControllerDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/DropDownGeymslaDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/Deserialization/TaskDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/DropDownGeymsla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/DropDownGeymsla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/MainApplication-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/vidmot/MainApplication-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/TaskGeymsla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/is/hi/hopur/lokaverkefni/vinnsla/TaskGeymsla.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,26 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/Eidur/OneDrive/Documents/Hi/Tölvunarfræði/HBV201G/LokaVerkefni/src/main/resources/is/hi/hopur/lokaverkefni/vidmot",
-    "last_opened_file_path": "C:/Users/Eidur/OneDrive/Documents/Hi/Tölvunarfræði/HBV201G/LokaVerkefni",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Eidur/OneDrive/Documents/Hi/Tölvunarfræði/HBV201G/LokaVerkefni/src/main/resources/is/hi/hopur/lokaverkefni/vidmot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Eidur/OneDrive/Documents/Hi/Tölvunarfræði/HBV201G/LokaVerkefni&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Eidur\OneDrive\Documents\Hi\Tölvunarfræði\HBV201G\LokaVerkefni\src\main\java\is\hi\hopur\lokaverkefni" />
@@ -94,7 +97,8 @@
       <workItem from="1681746775173" duration="2485000" />
       <workItem from="1681761034890" duration="1786000" />
       <workItem from="1681843790980" duration="10212000" />
-      <workItem from="1681911166444" duration="23347000" />
+      <workItem from="1681911166444" duration="23791000" />
+      <workItem from="1681988736484" duration="7474000" />
     </task>
     <task id="LOCAL−00001" summary="Bætti við grænan lit á progress bar þegar öll task eru búin">
       <created>1681422629727</created>

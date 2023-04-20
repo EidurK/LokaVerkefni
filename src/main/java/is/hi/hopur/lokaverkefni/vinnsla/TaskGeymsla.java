@@ -1,27 +1,19 @@
 package is.hi.hopur.lokaverkefni.vinnsla;
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.exc.StreamWriteException;
-import com.fasterxml.jackson.databind.DatabindException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ser.std.JsonValueSerializer;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import is.hi.hopur.lokaverkefni.vidmot.AddTask;
 import is.hi.hopur.lokaverkefni.vidmot.Task;
+import is.hi.hopur.lokaverkefni.vinnsla.Deserialization.TaskGeymslaDeserializer;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.beans.value.ObservableValueBase;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.scene.layout.AnchorPane;
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.nio.file.FileAlreadyExistsException;
-import java.nio.file.Path;
+@JsonDeserialize(using = TaskGeymslaDeserializer.class)
 public class TaskGeymsla {
-  private ObservableList<AnchorPane> itemObservableList = FXCollections.observableArrayList();
+  private ObservableList<AnchorPane> itemObservableList;
   private AddTask addTaskButton;
   public ObservableList<Task> getTaskObservableList() {
     return taskObservableList;
@@ -49,9 +41,9 @@ public class TaskGeymsla {
   public AddTask getAddTaskButton() {
     return addTaskButton;
   }
-  private File file = new File("target/Data.json");
   public TaskGeymsla(){
     addTaskButton = new AddTask();
+    itemObservableList = FXCollections.observableArrayList();
     itemObservableList.add(addTaskButton);
   }
   public void addItem(AnchorPane t) {
@@ -64,21 +56,11 @@ public class TaskGeymsla {
           taskObservableList.add(task);
       }
   }
-    private void saveTask(Task t){
-        System.out.println("saving...");
-        taskObservableList.add(t);
-        ObjectMapper objectMapper = new ObjectMapper();
-        for(Task task: taskObservableList){
-            try {
-                objectMapper.writeValue(new File("target/Data.json"), task);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-    }
   public void addTask(){
-    Task t = new Task();
-    addItem(new Task());
+    addTask(new Task());
+  }
+  public void addTask(Task t){
+      addItem(t);
   }
   public ObservableList<AnchorPane> getItemObservableList(){
     return itemObservableList;

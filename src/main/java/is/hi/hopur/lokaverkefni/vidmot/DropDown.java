@@ -3,8 +3,10 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializable;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.jsontype.TypeSerializer;
+import is.hi.hopur.lokaverkefni.vinnsla.Deserialization.DropDownDesirializer;
 import javafx.collections.ListChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
@@ -16,6 +18,7 @@ import javafx.scene.layout.AnchorPane;
 import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
 import java.io.File;
 import java.io.IOException;
+@JsonDeserialize(using = DropDownDesirializer.class)
 public class DropDown extends AnchorPane implements JsonSerializable {
     public TaskGeymsla getTaskGeymsla() {
         return taskGeymsla;
@@ -24,7 +27,6 @@ public class DropDown extends AnchorPane implements JsonSerializable {
         this.taskGeymsla = taskGeymsla;
     }
     private TaskGeymsla taskGeymsla;
-    private final ObjectMapper objectMapper;
     @FXML
     private AnchorPane fxDropDownAnchorPane;
     @FXML
@@ -39,18 +41,8 @@ public class DropDown extends AnchorPane implements JsonSerializable {
     }
     @FXML
     private TextField fxTextField;
-    public AnchorPane getFxDropDownAnchorPane() {
-        return fxDropDownAnchorPane;
-    }
-    public ComboBox<AnchorPane> getFxComboBox() {
-        return fxComboBox;
-    }
-    public ProgressBar getFxProgressBar() {
-        return fxProgressBar;
-    }
     public DropDown() {
         FXML_Lestur.lesa(this, "dropdown-view.fxml");
-        objectMapper = new ObjectMapper();
         taskGeymsla = new TaskGeymsla();
         taskGeymsla.getAddTaskButton().getFxAddItemButton().setOnAction(actionEvent ->{
             taskGeymsla.addTask();
