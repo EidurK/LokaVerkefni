@@ -6,7 +6,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.jsontype.TypeSerializer;
 import is.hi.hopur.lokaverkefni.vinnsla.Deserialization.TaskDeserializer;
 import is.hi.hopur.lokaverkefni.vinnsla.Deserialization.TaskGeymslaDeserializer;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -17,6 +19,8 @@ public class Task extends AnchorPane implements JsonSerializable {
     private TextField fxTextField;
     @FXML
     private CheckBox fxCheckBox;
+    @FXML
+    private Button fxDeleteButton;
     public Task() {
         FXML_Lestur.lesa(this, "task-view.fxml");
         this.setFocusTraversable(false);
@@ -39,5 +43,10 @@ public class Task extends AnchorPane implements JsonSerializable {
     }
     @Override
     public void serializeWithType(JsonGenerator jsonGenerator, SerializerProvider serializerProvider, TypeSerializer typeSerializer) throws IOException {
+    }
+
+    @FXML
+    private void deleteButtonHandler(ActionEvent event) {
+        System.out.println("delete pls");
     }
 }

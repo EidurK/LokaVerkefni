@@ -1,0 +1,74 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM__Changes_.xml	
++++ /dev/null	
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]" date="1681307327741" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 4/12/2023 1:48 PM [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2023_1_48_PM_[Changes]/shelved.patch	
++++ /dev/null	
+@@ -1,55 +0,0 @@
+-Index: src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n\r\n\r\n<ComboBox prefHeight=\"29.0\" prefWidth=\"449.0\" styleClass=\"combo-box\" stylesheets=\"@Style/DropDown.css\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" />\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml b/src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml
+---- a/src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml	(revision 69ce54f899738706b3afb622fe82fcffcaf8b038)
+-+++ b/src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml	(date 1681157124133)
+-@@ -1,6 +1,13 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- 
+--<?import javafx.scene.control.*?>
+-+<?import javafx.scene.control.ComboBox?>
+-+<?import javafx.scene.control.ProgressBar?>
+-+<?import javafx.scene.layout.AnchorPane?>
+- 
+- 
+--<ComboBox prefHeight="29.0" prefWidth="449.0" styleClass="combo-box" stylesheets="@Style/DropDown.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" />
+-+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="BG" stylesheets="@Style/DropDown.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+-+   <children>
+-+      <ComboBox layoutX="7.0" prefWidth="150.0" />
+-+      <ProgressBar layoutX="225.0" layoutY="6.0" prefWidth="200.0" progress="0.4" />
+-+   </children>
+-+</AnchorPane>
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ddb2b75c-e13f-4dbd-82b8-d322a840299a\" name=\"Changes\" comment=\"Bjó til verkefni\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/DropDown.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/DropDown.css\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2OFFR9APj4nR0BS3Eu6Nah5KShn\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ddb2b75c-e13f-4dbd-82b8-d322a840299a\" name=\"Changes\" comment=\"\" />\r\n      <created>1681148414306</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1681148414306</updated>\r\n      <workItem from=\"1681148415408\" duration=\"3943000\" />\r\n      <workItem from=\"1681152372311\" duration=\"4588000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 69ce54f899738706b3afb622fe82fcffcaf8b038)
+-+++ b/.idea/workspace.xml	(date 1681157132364)
+-@@ -5,8 +5,7 @@
+-   </component>
+-   <component name="ChangeListManager">
+-     <list default="true" id="ddb2b75c-e13f-4dbd-82b8-d322a840299a" name="Changes" comment="Bjó til verkefni">
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/DropDown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/Style/DropDown.css" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/is/hi/hopur/lokaverkefni/dropdown-view.fxml" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -60,7 +59,7 @@
+-       <option name="presentableId" value="Default" />
+-       <updated>1681148414306</updated>
+-       <workItem from="1681148415408" duration="3943000" />
+--      <workItem from="1681152372311" duration="4588000" />
+-+      <workItem from="1681152372311" duration="4755000" />
+-     </task>
+-     <servers />
+-   </component>
