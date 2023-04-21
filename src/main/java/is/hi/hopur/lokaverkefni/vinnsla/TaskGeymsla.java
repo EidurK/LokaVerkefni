@@ -57,7 +57,9 @@ public class TaskGeymsla {
       }
   }
   public void addTask(){
-    addTask(new Task());
+    Task task = new Task();
+    addTask(task);
+   task.setTaskGeymsla(this);
   }
   public void addTask(Task t){
       addItem(t);

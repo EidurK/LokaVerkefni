@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.jsontype.TypeSerializer;
 import is.hi.hopur.lokaverkefni.vinnsla.Deserialization.TaskDeserializer;
 import is.hi.hopur.lokaverkefni.vinnsla.Deserialization.TaskGeymslaDeserializer;
+import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -21,12 +22,17 @@ public class Task extends AnchorPane implements JsonSerializable {
     private CheckBox fxCheckBox;
     @FXML
     private Button fxDeleteButton;
+
+    private TaskGeymsla taskGeymsla;
     public Task() {
         FXML_Lestur.lesa(this, "task-view.fxml");
         this.setFocusTraversable(false);
         fxDeleteButton.setOnAction(ActionEvent -> {
-            System.out.println("delete pls");
+            taskGeymsla.getItemObservableList().remove(this);
         });
+    }
+    public void setTaskGeymsla(TaskGeymsla t){
+        this.taskGeymsla = t;
     }
     public void setLabelText(String s){
         fxTextField.setText(s);
