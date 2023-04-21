@@ -24,6 +24,9 @@ public class Task extends AnchorPane implements JsonSerializable {
     public Task() {
         FXML_Lestur.lesa(this, "task-view.fxml");
         this.setFocusTraversable(false);
+        fxDeleteButton.setOnAction(ActionEvent -> {
+            System.out.println("delete pls");
+        });
     }
     public void setLabelText(String s){
         fxTextField.setText(s);
@@ -43,10 +46,5 @@ public class Task extends AnchorPane implements JsonSerializable {
     }
     @Override
     public void serializeWithType(JsonGenerator jsonGenerator, SerializerProvider serializerProvider, TypeSerializer typeSerializer) throws IOException {
-    }
-
-    @FXML
-    private void deleteButtonHandler(ActionEvent event) {
-        System.out.println("delete pls");
     }
 }
