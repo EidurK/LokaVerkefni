@@ -12,11 +12,13 @@
    <children>
       <CheckBox id="check" fx:id="fxCheckBox" layoutX="23.0" layoutY="6.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="16.0" AnchorPane.leftAnchor="25.0" />
       <TextField fx:id="fxTextField" layoutX="56.0" layoutY="3.0" prefHeight="25.0" prefWidth="308.0" promptText="Input task" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="2.0" />
-      <Button fx:id="fxDeleteButton" layoutX="374.0" layoutY="3.0" prefHeight="25.0" prefWidth="25.0" styleClass="deleteButton" AnchorPane.rightAnchor="5.0" />
-      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="371.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
-         <effect>
-            <ColorAdjust brightness="-0.44" saturation="-1.0" />
-         </effect>
-      </ImageView>
+      <Button fx:id="fxDeleteButton" layoutX="374.0" layoutY="3.0" prefHeight="25.0" prefWidth="25.0" styleClass="deleteButton">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" x="2.0">
+               <effect>
+                  <ColorAdjust brightness="-0.44" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic></Button>
    </children>
 </fx:root>
