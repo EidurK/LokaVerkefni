@@ -16,21 +16,23 @@ import java.io.IOException;
 public class CheckboxingController implements JsonSerializable {
     private File file = new File("target/data.json");
     private ObjectMapper objectMapper = new ObjectMapper();
-    public ObservableList<DropDown> getListItems(){
+    public ObservableList<Project> getListItems(){
         return fxListView.getItems();
     }
-    public void setListItems(ObservableList<DropDown> observableList){
+    public void setListItems(ObservableList<Project> observableList){
         fxListView.setItems(observableList);
     }
     @FXML
-    private ListView<DropDown> fxListView;
+    private ListView<Project> fxListView;
     @FXML
     private Button fxSaveProjectButton;
     @FXML
     private Button fxAddProjectButton;
     @FXML
-    private void newProjectButtonHandler(ActionEvent event) throws JsonProcessingException {
-        fxListView.getItems().add(new DropDown());
+    private void newProjectButtonHandler(ActionEvent event){
+        Project p = new Project();
+        p.setList(fxListView.getItems());
+        fxListView.getItems().add(p);
     }
     @FXML
     private void saveProjectButtonHandler(ActionEvent event) throws IOException {
@@ -56,7 +58,7 @@ public class CheckboxingController implements JsonSerializable {
         fxListView.setItems(dropDownGeymsla.getDopDownGeymsla());
     }
     private static void count(DropDownGeymsla dropDownGeymsla){
-        for(DropDown drop: dropDownGeymsla.getDopDownGeymsla()){
+        for(Project drop: dropDownGeymsla.getDopDownGeymsla()){
             System.out.println("doropDown");
             for(Task task: drop.getTaskGeymsla().getTaskObservableList()){
                 System.out.println("task");
@@ -68,7 +70,7 @@ public class CheckboxingController implements JsonSerializable {
     public void serialize(JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
         jsonGenerator.writeStartObject();
         jsonGenerator.writeArrayFieldStart("DropDowns");
-        for(DropDown dropDown: getListItems()){
+        for(Project dropDown: getListItems()){
             jsonGenerator.writeObject(dropDown);
         }
         jsonGenerator.writeEndArray();

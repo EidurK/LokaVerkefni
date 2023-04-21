@@ -5,15 +5,14 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import is.hi.hopur.lokaverkefni.vidmot.DropDown;
-import is.hi.hopur.lokaverkefni.vidmot.Task;
+import is.hi.hopur.lokaverkefni.vidmot.Project;
 import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
 import java.io.IOException;
-public class DropDownDesirializer extends JsonDeserializer<DropDown> {
+public class DropDownDesirializer extends JsonDeserializer<Project> {
     @Override
-    public DropDown deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JacksonException {
+    public Project deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JacksonException {
         System.out.println("DD - deserializer");
-        DropDown dropDown = new DropDown();
+        Project dropDown = new Project();
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode root = deserializationContext.readTree(jsonParser);
         dropDown.setFxTextField(root.get("DropDownText").asText());

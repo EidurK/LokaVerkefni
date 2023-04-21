@@ -1,25 +1,21 @@
 package is.hi.hopur.lokaverkefni.vidmot;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializable;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.jsontype.TypeSerializer;
 import is.hi.hopur.lokaverkefni.vinnsla.Deserialization.DropDownDesirializer;
-import javafx.collections.ListChangeListener;
+import is.hi.hopur.lokaverkefni.vinnsla.DropDownGeymsla;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.SingleSelectionModel;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.skin.ComboBoxListViewSkin;
 import javafx.scene.layout.AnchorPane;
 import is.hi.hopur.lokaverkefni.vinnsla.TaskGeymsla;
-import java.io.File;
+
 import java.io.IOException;
 @JsonDeserialize(using = DropDownDesirializer.class)
-public class DropDown extends AnchorPane implements JsonSerializable {
+public class Project extends AnchorPane implements JsonSerializable {
     public TaskGeymsla getTaskGeymsla() {
         return taskGeymsla;
     }
@@ -42,6 +38,8 @@ public class DropDown extends AnchorPane implements JsonSerializable {
     private ComboBox<AnchorPane> fxComboBox;
     @FXML
     private ProgressBar fxProgressBar;
+    @FXML
+    private Button fxDeleteProject;
     public TextField getFxTextField() {
         return fxTextField;
     }
@@ -51,9 +49,13 @@ public class DropDown extends AnchorPane implements JsonSerializable {
     public void setProgress(double d){
         fxProgressBar.setProgress(d);
     }
+    private ObservableList<Project> listi;
+    public void setList(ObservableList<Project> list){
+        listi = list;
+    }
     @FXML
     private TextField fxTextField;
-    public DropDown() {
+    public Project() {
         FXML_Lestur.lesa(this, "dropdown-view.fxml");
         setTaskGeymsla(new TaskGeymsla());
         fxComboBox.setVisibleRowCount(6);
@@ -74,6 +76,13 @@ public class DropDown extends AnchorPane implements JsonSerializable {
             }
         });
         fxComboBox.setItems(taskGeymsla.getItemObservableList());
+        fxDeleteProject.setOnAction(ActionEvent -> {
+            try {
+                listi.remove(this);
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+        });
     }
     @Override
     public void serialize(JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
